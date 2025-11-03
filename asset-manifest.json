@@ -1,25 +1,25 @@
 {
   "files": {
-    "main.css": "/sophie-rogers/sophie-rogers.github.io.git/static/css/main.cc8e18ac.css",
-    "main.js": "/sophie-rogers/sophie-rogers.github.io.git/static/js/main.66659a7e.js",
-    "static/media/chickens.gif": "/sophie-rogers/sophie-rogers.github.io.git/static/media/chickens.56e4db66d8360966dd41.gif",
-    "static/media/SqlLogo.png": "/sophie-rogers/sophie-rogers.github.io.git/static/media/SqlLogo.85fb38d6773862e917f4.png",
-    "static/media/MongoDBLogo.png": "/sophie-rogers/sophie-rogers.github.io.git/static/media/MongoDBLogo.1df44ece8cf851cecf69.png",
-    "static/media/NodeJSLogo.png": "/sophie-rogers/sophie-rogers.github.io.git/static/media/NodeJSLogo.aabc0115471d1e8b2d6e.png",
-    "static/media/ReactLogo.png": "/sophie-rogers/sophie-rogers.github.io.git/static/media/ReactLogo.37940586dd863909ffca.png",
-    "static/media/TailwindLogo.png": "/sophie-rogers/sophie-rogers.github.io.git/static/media/TailwindLogo.36b2728bf0d14b7b7576.png",
-    "static/media/PythonLogo.png": "/sophie-rogers/sophie-rogers.github.io.git/static/media/PythonLogo.2e65c2b73eddaaf97e06.png",
-    "static/media/DockerLogo.png": "/sophie-rogers/sophie-rogers.github.io.git/static/media/DockerLogo.6d1afdb456643d603142.png",
-    "static/media/TypescriptLogo.png": "/sophie-rogers/sophie-rogers.github.io.git/static/media/TypescriptLogo.c4105801aadf2606ac30.png",
-    "static/media/ReduxLogo.png": "/sophie-rogers/sophie-rogers.github.io.git/static/media/ReduxLogo.296b9306ae3e4de348c6.png",
-    "static/media/FirebaseLogo.png": "/sophie-rogers/sophie-rogers.github.io.git/static/media/FirebaseLogo.a5f9f1fd96c36040dd43.png",
-    "static/media/JsLogo.png": "/sophie-rogers/sophie-rogers.github.io.git/static/media/JsLogo.db393457bf6303d846d6.png",
-    "index.html": "/sophie-rogers/sophie-rogers.github.io.git/index.html",
-    "main.cc8e18ac.css.map": "/sophie-rogers/sophie-rogers.github.io.git/static/css/main.cc8e18ac.css.map",
-    "main.66659a7e.js.map": "/sophie-rogers/sophie-rogers.github.io.git/static/js/main.66659a7e.js.map"
+    "main.css": "/sophie-rogers/sophie-rogers.github.io/static/css/main.cc8e18ac.css",
+    "main.js": "/sophie-rogers/sophie-rogers.github.io/static/js/main.dd253ea7.js",
+    "static/media/chickens.gif": "/sophie-rogers/sophie-rogers.github.io/static/media/chickens.56e4db66d8360966dd41.gif",
+    "static/media/SqlLogo.png": "/sophie-rogers/sophie-rogers.github.io/static/media/SqlLogo.85fb38d6773862e917f4.png",
+    "static/media/MongoDBLogo.png": "/sophie-rogers/sophie-rogers.github.io/static/media/MongoDBLogo.1df44ece8cf851cecf69.png",
+    "static/media/NodeJSLogo.png": "/sophie-rogers/sophie-rogers.github.io/static/media/NodeJSLogo.aabc0115471d1e8b2d6e.png",
+    "static/media/ReactLogo.png": "/sophie-rogers/sophie-rogers.github.io/static/media/ReactLogo.37940586dd863909ffca.png",
+    "static/media/TailwindLogo.png": "/sophie-rogers/sophie-rogers.github.io/static/media/TailwindLogo.36b2728bf0d14b7b7576.png",
+    "static/media/PythonLogo.png": "/sophie-rogers/sophie-rogers.github.io/static/media/PythonLogo.2e65c2b73eddaaf97e06.png",
+    "static/media/DockerLogo.png": "/sophie-rogers/sophie-rogers.github.io/static/media/DockerLogo.6d1afdb456643d603142.png",
+    "static/media/TypescriptLogo.png": "/sophie-rogers/sophie-rogers.github.io/static/media/TypescriptLogo.c4105801aadf2606ac30.png",
+    "static/media/ReduxLogo.png": "/sophie-rogers/sophie-rogers.github.io/static/media/ReduxLogo.296b9306ae3e4de348c6.png",
+    "static/media/FirebaseLogo.png": "/sophie-rogers/sophie-rogers.github.io/static/media/FirebaseLogo.a5f9f1fd96c36040dd43.png",
+    "static/media/JsLogo.png": "/sophie-rogers/sophie-rogers.github.io/static/media/JsLogo.db393457bf6303d846d6.png",
+    "index.html": "/sophie-rogers/sophie-rogers.github.io/index.html",
+    "main.cc8e18ac.css.map": "/sophie-rogers/sophie-rogers.github.io/static/css/main.cc8e18ac.css.map",
+    "main.dd253ea7.js.map": "/sophie-rogers/sophie-rogers.github.io/static/js/main.dd253ea7.js.map"
   },
   "entrypoints": [
     "static/css/main.cc8e18ac.css",
-    "static/js/main.66659a7e.js"
+    "static/js/main.dd253ea7.js"
   ]
 }
