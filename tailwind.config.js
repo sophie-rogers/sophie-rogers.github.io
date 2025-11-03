@@ -5,10 +5,10 @@ module.exports = {
   theme: {
     extend: {
       colors: {
-        yellow_vs:"#D9E577",
-        blue_vs:"#389fdc",
-        lightblue_vs:"#85d8fb",
-        brown_vs:"#d98e73",
+        yellow_vs:"#EC678D",
+        blue_vs:"#F2ABC3",
+        lightblue_vs:"#EC678D",
+        brown_vs:"#9A465F",
         
       },
     },

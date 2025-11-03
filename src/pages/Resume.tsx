@@ -16,47 +16,88 @@ const Resume = () => {
           <div className="table-cell border-b border-b-[#e6f1ff] border-opacity-25 w-full"></div>
         </div>
       </div>
+
       <div className="text-[#a2aabc] text-lg mt-5">
+        {/* Education */}
         <div className="flex flex-row">
           <div className="w-1/4">
             <code className="text-yellow_vs">Education</code>
           </div>
           <div className="w-3/4">
-            <code className="text-blue_vs">Lorem Ipsum</code>
-            <br />
+            <code className="text-blue_vs">University of Kent</code>
+            <br /><br />
             <code className="italic text-sm text-lightblue_vs">
-              Masters in Information technology
+              MSc Computer Science: Distinction
             </code>
             <br />
             <code className="text-xs text-brown_vs">
-              • Sept 2014 - July 2017
+              • Sept 2021 - Sept 2022
+            </code>
+            <br /><br />
+            <code className="italic text-sm text-lightblue_vs">
+              BSc Multimedia Technology and Design: Distinction
+            </code>
+            <br />
+            <code className="text-xs text-brown_vs">
+              • Sept 2017 - May 2021
             </code>
           </div>
         </div>
+
+        {/* Work */}
         <div className="flex flex-row pt-10">
           <div className="w-1/4">
             <code className="text-yellow_vs">Work</code>
           </div>
           <div className="w-3/4">
-            <code className="text-blue_vs">Lorem Ipsum</code>
-            <br />
+            {/* Employer 1 */}
+            <code className="text-blue_vs">University of Kent</code>
+            <br /><br />
             <code className="italic text-sm text-lightblue_vs">
-              Lorem - Paris, France{" "}
+              Assistant Lecturer, School of Computing{" "}
             </code>
             <br />
-            <code className="text-xs text-brown_vs">• July 2017 - Present</code>
+            <code className="text-xs text-brown_vs">• January 2024 - Present</code>
             <br />
             <code className="text-sm">
-              <br />• Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-              <br />• Sed id eros non nisi vulputate eleifend. Vestibulum erat
-              ipsum, lacinia ut nibh ut, pulvinar interdum lorem.
-              <br />• Aliquam et nisi eu risus ultrices suscipit nec nec quam.
-              <br />• Suspendisse pretium fermentum luctus.
-              <br />• Maecenas vitae vestibulum ipsum, ut varius diam.
-              <br />• Phasellus mattis nunc vel purus maximus.
+              <br />• Delivering small group classes for undergraduate and postgraduate taught programmes within the School of Computing.
+              <br />• Gave a new lecture for third-year students on the ethics of AI in Healthcare (October 2024).
+              <br />• Marking assessments on taught modules, including coding assignments, in-class tests, and essays.
+            </code>
+            <br /><br />
+            <code className="italic text-sm text-lightblue_vs">
+              Senior IT Support Assistant, IT Helpdesk{" "}
+            </code>
+            <br />
+            <code className="text-xs text-brown_vs">• September 2021 - September 2024</code>
+            <br />
+            <code className="text-sm">
+              <br />• Ensured that over 20,000 students and staff at the University of Kent could access and use IT facilities.
+              <br />• Delivered solutions to a range of technical issues by liaising with customers and colleagues, using initiative and specialist knowledge.
+              <br />• Troubleshot personal device issues, campus internet connectivity, and library IT systems.
+              <br />• Supported software installations and repaired campus printers.
+            </code>
+
+            {/* Employer 2 */}
+            <br /><br /><br />
+            <code className="text-blue_vs">University of London</code>
+            <br /><br />
+            <code className="italic text-sm text-lightblue_vs">
+              Online Tutor, Computer Science
+            </code>
+            <br />
+            <code className="text-xs text-brown_vs">• April 2025 - Present</code>
+            <br />
+            <code className="text-sm">
+              <br />• Providing remote support to online learners on the Computer Science undergraduate programmes.
+              <br />• Developing and presenting online 30 minute interactive lectures to supplement recorded content and readings.
+              <br />• Supervising undergraduate Final Year Projects in a range of domains.
+              <br />• Marking assessments and providing feedback, as well as second marking as part of a module team.
             </code>
           </div>
         </div>
+
+        {/* Skills */}
         <div className="flex flex-row pt-10 flex-wrap">
           <div className="w-1/4">
             <code className="text-yellow_vs">Skills</code>
@@ -66,13 +107,10 @@ const Resume = () => {
               <br />• Nulla tristique luctus lacinia. Nullam ut tortor arcu.
               <br />• Aenean in mi non leo placerat suscipit a eget odio.
               <br />• Vivamus et dolor odio.
-              <br />• Suspendisse tempus interdum eros, et bibendum massa tempus
-              vitae.
+              <br />• Suspendisse tempus interdum eros, et bibendum massa tempus vitae.
               <br />• Sed in aliquam ligula. Sed eget orci tortor.
-              <br />• Pellentesque laoreet laoreet justo, sed efficitur sapien
-              tincidunt eu.
-              <br />• Nulla tempor nunc eu molestie volutpat. Nunc a accumsan
-              dolor.
+              <br />• Pellentesque laoreet laoreet justo, sed efficitur sapien tincidunt eu.
+              <br />• Nulla tempor nunc eu molestie volutpat. Nunc a accumsan dolor.
               <br />• Duis ut congue dui.
             </code>
           </div>

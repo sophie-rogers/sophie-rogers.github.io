@@ -46,17 +46,14 @@ const About = () => {
         </div>
         <div className="text-[#a2aabc] text-lg mt-5">
           <code>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed id eros
-            non nisi vulputate eleifend. Vestibulum erat ipsum, lacinia ut nibh
-            ut, pulvinar interdum lorem. Aliquam et nisi eu risus ultrices
-            suscipit nec nec quam. Suspendisse pretium fermentum luctus.
-            Maecenas vitae vestibulum ipsum, ut varius diam. Phasellus mattis
-            nunc vel purus maximus, sit amet congue ligula tincidunt. Nulla
-            tristique luctus lacinia. Nullam ut tortor arcu.
+            I am currently a PhD student in the School of Computing at the University of Kent, Canterbury.
           </code>
-          <br />
-          <br />
-          <code>Aenean in mi non leo placerat suscipit a eget odio:</code>
+          <br /><br />
+          <code>
+            My interdisciplinary research focuses on the potential for use of large language models to assist in decision-making in kidney transplant. Whilst the project is primarily based in Computer Science, it uses mixed methods drawing from health research and social sciences.
+          </code>
+          <br /><br />
+          <code>Technologies I work with:</code>
           <List list={skills} />
         </div>
       </div>

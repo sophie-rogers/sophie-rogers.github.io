@@ -1,56 +1,50 @@
-import React, { useState, useEffect } from "react";
-import About from "./About";
-import Contact from "./Contact";
+import React, { useState } from "react";
 import SideBar from "../components/SideBar";
-import Resume from "./Resume";
-import MobileMenu from "../components/MobileMenu";
 import Header from "../components/Header";
+import About from "./About";
+import Resume from "./Resume";
+import Interests from "./Interests";
+import Contact from "./Contact";
 import NavBar from "../components/NavBar";
+import MobileMenu from "../components/MobileMenu";
 
 const Home = () => {
   const [activeTab, setActiveTab] = useState("home");
-  const [sidebarWidth, setSidebarWidth] = useState(270); // Default width
-
-  useEffect(() => {
-    const savedWidth = localStorage.getItem("sideBarWidth");
-    if (savedWidth) {
-      setSidebarWidth(parseInt(savedWidth));
-    }
-  }, []);
-
-  useEffect(() => {
-    localStorage.setItem("sideBarWidth", sidebarWidth.toString());
-  }, [sidebarWidth]);
+  const sidebarWidth = 350; // fixed width
 
   return (
     <div id="home" className="App flex h-full">
-      <div
-        className="bg-[#262526] h-full fixed hidden lg:block"
-        style={{ width: `${sidebarWidth}px` }}
-      >
-        <SideBar setWidth={setSidebarWidth} width={sidebarWidth} />
+      {/* Sidebar */}
+      <div className="bg-[#262526] h-full fixed hidden lg:block">
+        <SideBar width={sidebarWidth} />
       </div>
-      <div className="bg-[#1e1e1e] h-full">
+      
+      {/* Main content */}
+      <div className="bg-[#28121B] h-full flex-1 lg:ml-[414px]">
+        {/* Mobile menu for small screens */}
         <div className="lg:hidden">
           <MobileMenu />
         </div>
-        <div
-          className="bg-[#424042] h-16 hidden lg:block"
-          style={{ paddingLeft: `${sidebarWidth}px` }}
-        >
+        
+        {/* NavBar */}
+        <div className="bg-[#424042] h-16 hidden lg:flex">
           <NavBar activeTab={activeTab} setActiveTab={setActiveTab} />
         </div>
+        
+        {/* Page content */}
         {activeTab === "home" && (
-          <div style={{ paddingLeft: `${sidebarWidth}px` }}>
+          <div className="p-4">
             <Header />
             <About />
             <Resume />
+            <Interests />
             <Contact />
           </div>
         )}
-        {activeTab === "about" &&  <div style={{ paddingLeft: `${sidebarWidth}px` }}><About /></div>}
-        {activeTab === "resume" && <div style={{ paddingLeft: `${sidebarWidth}px` }}><Resume /></div>}
-        {activeTab === "contact" && <div style={{ paddingLeft: `${sidebarWidth}px` }}><Contact /></div>}
+        {activeTab === "about" && <About />}
+        {activeTab === "resume" && <Resume />}
+        {activeTab === "interests" && <Interests />}
+        {activeTab === "contact" && <Contact />}
       </div>
     </div>
   );
