@@ -1,7 +1,7 @@
 {
   "name": "sophie",
   "version": "0.1.0",
-  "homepage": "https://github.com/sophie-rogers/sophie-rogers.github.io.git",
+  "homepage": ".",
   "private": true,
   "dependencies": {
     "@headlessui/react": "^1.5.0",
