@@ -3,31 +3,30 @@ import { IdentificationIcon } from "@heroicons/react/solid";
 import List from "../components/List";
 
 const PythonLogo = require("../assets/logos/PythonLogo.png");
-const ReactLogo = require("../assets/logos/ReactLogo.png");
+const LaTeXLogo = require("../assets/logos/LaTeXLogo.png");
 const TypescriptLogo = require("../assets/logos/TypescriptLogo.png");
 const JsLogo = require("../assets/logos/JsLogo.png");
-const NextLogo = require("../assets/logos/NextLogo.png");
+const SPSSLogo = require("../assets/logos/SPSSLogo.png");
 const TailwindLogo = require("../assets/logos/TailwindLogo.png");
 const SqlLogo = require("../assets/logos/SqlLogo.png");
-const ReduxLogo = require("../assets/logos/ReduxLogo.png");
-const FirebaseLogo = require("../assets/logos/FirebaseLogo.png");
-const MongoDBLogo = require("../assets/logos/MongoDBLogo.png");
-const NodeJSLogo = require("../assets/logos/NodeJSLogo.png");
-const DockerLogo = require("../assets/logos/DockerLogo.png");
+const MatplotlibLogo = require("../assets/logos/MatplotlibLogo.png");
+const PHPLogo = require("../assets/logos/PHPLogo.png");
+const JavaLogo = require("../assets/logos/JavaLogo.png");
+
 
 const skills = [
-  { name: "JavaScript (ES6+)", logo: JsLogo },
-  { name: "Next.js", logo: NextLogo },
-  { name: "React", logo: ReactLogo },
+  { name: "Python", logo: PythonLogo},
+  { name: "NLTK", logo: PythonLogo},
+  { name: "Matplotlib", logo: MatplotlibLogo},
+  { name: "Huggingface", logo: PythonLogo},
+  { name: "LaTeX", logo: LaTeXLogo},
+  { name: "SPSS", logo: SPSSLogo},
+  { name: "JavaScript", logo: JsLogo },
+  { name: "Java", logo: JavaLogo },
+  { name: "PHP", logo: PHPLogo },
   { name: "TypeScript", logo: TypescriptLogo },
   { name: "Tailwind CSS", logo: TailwindLogo },
-  { name: "Redux", logo: ReduxLogo },
-  { name: "Python", logo: PythonLogo },
-  { name: "Firebase", logo: FirebaseLogo },
-  { name: "Nodejs", logo: NodeJSLogo },
-  { name: "SQL", logo: SqlLogo },
-  { name: "MongoDB", logo: MongoDBLogo },
-  { name: "Docker", logo: DockerLogo },
+  { name: "SQL", logo: SqlLogo }
 ];
 
 const About = () => {

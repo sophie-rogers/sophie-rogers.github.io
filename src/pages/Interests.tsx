@@ -19,7 +19,7 @@ const researchThemes = [
     title: "Human–Machine Interaction",
     tagline: "Understanding collaboration and trust between humans and AI",
     description:
-      "Using mixed-methods approaches, I study how clinicians engage with algorithmic recommendations, aiming to improve interpretability, usability, and ethical alignment.",
+      "Using mixed-methods approaches, I study how clinicians percieve algorithmic recommendation tools, aiming to improve interpretability, usability, and ethical alignment.",
   },
   {
     icon: <ScaleIcon className="h-10 w-10 text-blue-400 mb-3" />,
@@ -33,7 +33,7 @@ const researchThemes = [
     title: "Interdisciplinary Methods",
     tagline: "Combining computational and qualitative research",
     description:
-      "My work bridges computer science and social science, incorporating interviews, prototyping, and model evaluation to understand LLM behaviour in practice.",
+      "My work bridges computer science and social science, incorporating interviews, surveys, prototyping, and model evaluation to understand LLM behaviour in practice.",
   },
 ];
 
