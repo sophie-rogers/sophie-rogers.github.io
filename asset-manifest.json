@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "./static/css/main.5ba3364b.css",
-    "main.js": "./static/js/main.d54817a5.js",
+    "main.css": "./static/css/main.06922f80.css",
+    "main.js": "./static/js/main.4400dea3.js",
     "static/media/chickens.gif": "./static/media/chickens.56e4db66d8360966dd41.gif",
     "static/media/your-image.jpg": "./static/media/your-image.89addb06102a8ec13b9e.jpg",
     "static/media/MatplotlibLogo.png": "./static/media/MatplotlibLogo.6a0679f4afd7259e605d.png",
@@ -16,11 +16,11 @@
     "static/media/JavaLogo.png": "./static/media/JavaLogo.6814a1e33a897535b1f5.png",
     "static/media/JsLogo.png": "./static/media/JsLogo.db393457bf6303d846d6.png",
     "index.html": "./index.html",
-    "main.5ba3364b.css.map": "./static/css/main.5ba3364b.css.map",
-    "main.d54817a5.js.map": "./static/js/main.d54817a5.js.map"
+    "main.06922f80.css.map": "./static/css/main.06922f80.css.map",
+    "main.4400dea3.js.map": "./static/js/main.4400dea3.js.map"
   },
   "entrypoints": [
-    "static/css/main.5ba3364b.css",
-    "static/js/main.d54817a5.js"
+    "static/css/main.06922f80.css",
+    "static/js/main.4400dea3.js"
   ]
 }
