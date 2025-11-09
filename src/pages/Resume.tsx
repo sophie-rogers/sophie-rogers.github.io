@@ -3,15 +3,17 @@ import { ClipboardListIcon } from "@heroicons/react/solid";
 
 const Resume = () => {
   return (
-    <div
-      id="Resume"
-      className="lg:w-1/2 mt-64 mb-4 text-justify mx-12 lg:mr-60 lg:ml-auto"
-    >
+<div
+  id="Resume"
+  className="mt-16 mb-4 mx-8 lg:mx-24"
+>
       <div>
-        <div className="table">
+        {/* Section heading */}
+        
+        <div className="table mb-6">
           <ClipboardListIcon className="h-5 w-5 mr-4 text-yellow_vs" />{" "}
           <code className="table-cell text-[#e6f1ff] text-3xl mt-5 whitespace-nowrap">
-            Resume
+            CV
           </code>
           <div className="table-cell border-b border-b-[#e6f1ff] border-opacity-25 w-full"></div>
         </div>
@@ -30,17 +32,13 @@ const Resume = () => {
               MSc Computer Science: Distinction
             </code>
             <br />
-            <code className="text-xs text-brown_vs">
-              • Sept 2021 - Sept 2022
-            </code>
+            <code className="text-xs text-brown_vs">• Sept 2021 - Sept 2022</code>
             <br /><br />
             <code className="italic text-sm text-lightblue_vs">
               BSc Multimedia Technology and Design: Distinction
             </code>
             <br />
-            <code className="text-xs text-brown_vs">
-              • Sept 2017 - May 2021
-            </code>
+            <code className="text-xs text-brown_vs">• Sept 2017 - May 2021</code>
           </div>
         </div>
 
@@ -54,7 +52,7 @@ const Resume = () => {
             <code className="text-blue_vs">University of Kent</code>
             <br /><br />
             <code className="italic text-sm text-lightblue_vs">
-              Assistant Lecturer, School of Computing{" "}
+              Assistant Lecturer, School of Computing
             </code>
             <br />
             <code className="text-xs text-brown_vs">• January 2024 - Present</code>
@@ -66,7 +64,7 @@ const Resume = () => {
             </code>
             <br /><br />
             <code className="italic text-sm text-lightblue_vs">
-              Senior IT Support Assistant, IT Helpdesk{" "}
+              Senior IT Support Assistant, IT Helpdesk
             </code>
             <br />
             <code className="text-xs text-brown_vs">• September 2021 - September 2024</code>
@@ -93,25 +91,7 @@ const Resume = () => {
               <br />• Developing and presenting online 30 minute interactive lectures to supplement recorded content and readings.
               <br />• Supervising undergraduate Final Year Projects in a range of domains.
               <br />• Marking assessments and providing feedback, as well as second marking as part of a module team.
-            </code>
-          </div>
-        </div>
-
-        {/* Skills */}
-        <div className="flex flex-row pt-10 flex-wrap">
-          <div className="w-1/4">
-            <code className="text-yellow_vs">Skills</code>
-          </div>
-          <div className="w-3/4">
-            <code className="text-sm">
-              <br />• Nulla tristique luctus lacinia. Nullam ut tortor arcu.
-              <br />• Aenean in mi non leo placerat suscipit a eget odio.
-              <br />• Vivamus et dolor odio.
-              <br />• Suspendisse tempus interdum eros, et bibendum massa tempus vitae.
-              <br />• Sed in aliquam ligula. Sed eget orci tortor.
-              <br />• Pellentesque laoreet laoreet justo, sed efficitur sapien tincidunt eu.
-              <br />• Nulla tempor nunc eu molestie volutpat. Nunc a accumsan dolor.
-              <br />• Duis ut congue dui.
+              <br /><br />
             </code>
           </div>
         </div>

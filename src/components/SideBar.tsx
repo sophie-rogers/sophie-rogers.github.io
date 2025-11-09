@@ -26,7 +26,7 @@ const SideBar: React.FC<SideBarProps> = ({ width }) => {
     <div className="flex h-full relative">
       {/* Vertical activity bar */}
       <div className="bg-[#191215] w-16 flex flex-col items-center py-4 space-y-4">
-        <SocialIcon href="https://github.com">
+        <SocialIcon href="https://github.com/sophie-rogers">
           <svg
             className="w-8 h-8"
             fill={defaultColor}
@@ -42,7 +42,7 @@ const SideBar: React.FC<SideBarProps> = ({ width }) => {
           </svg>
         </SocialIcon>
 
-        <SocialIcon href="https://linkedin.com">
+        <SocialIcon href="https://uk.linkedin.com/in/rogerssophie">
           <svg
             className="w-8 h-8"
             fill={defaultColor}
@@ -54,7 +54,7 @@ const SideBar: React.FC<SideBarProps> = ({ width }) => {
           </svg>
         </SocialIcon>
 
-        <SocialIcon href="mailto:you@example.com">
+        <SocialIcon href="mailto:S.Rogers@kent.ac.uk">
           <svg
             className="w-8 h-8"
             fill="none"
@@ -88,7 +88,7 @@ const SideBar: React.FC<SideBarProps> = ({ width }) => {
                 onClick={() => setShowWebList(!showWebList)}
               >
                 {showWebList ? <ChevronDownIcon className="w-6 mr-1" /> : <ChevronRightIcon className="w-6 mr-1" />}
-                <p>Web</p>
+                <p>PhD Computer Science</p>
               </div>
               {showWebList && <WebList />}
             </>
@@ -108,7 +108,7 @@ export default SideBar;
 
 const WebList: React.FC = () => (
   <div className="flex flex-col ml-8 text-[#a2aabc]">
-    {["First Project", "Second Project", "Third Project", "Fourth Project"].map((proj, idx) => (
+    {["Ethics of AI in Healthcare Lecture", "Research Poster", "Research Protocol"].map((proj, idx) => (
       <a key={idx} href="/">
         <div className="flex items-center hover:bg-[#2b2a2a] py-1">
           <img src={idx % 2 === 0 ? JSIcon : TSIcon} alt={`${proj} Icon`} className="w-6 mr-1" />
