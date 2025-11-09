@@ -3,10 +3,14 @@
     "outDir": "./built",
     "allowJs": true,
     "target": "es5",
-    "lib": ["ES2016", "dom"],
-    "jsx": "react", 
+    "lib": ["es2016", "dom"],
+    "jsx": "react",
     "esModuleInterop": true,
     "skipLibCheck": true,
+    "strict": true,          // optional but recommended for stricter type-checking
+    "moduleResolution": "node",
+    "forceConsistentCasingInFileNames": true
   },
-  "include": ["./src/**/*"]
+  "include": ["src/**/*"],
+  "exclude": ["node_modules", "built"]
 }

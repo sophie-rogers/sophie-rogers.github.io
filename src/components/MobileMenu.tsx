@@ -52,10 +52,10 @@ const MobileMenu = () => {
     },
   ];
 
-  // Utility function to combine class names
-  function classNames(...classes) {
-    return classes.filter(Boolean).join(" ");
-  }
+// Utility function to combine class names
+function classNames(...classes: string[]) {
+  return classes.filter(Boolean).join(" ");
+}
 
   // State to toggle the visibility of the projects list
   const [showProjectsList, SetShowProjectsList] = useState(true);
