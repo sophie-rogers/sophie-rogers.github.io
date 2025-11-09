@@ -3,6 +3,7 @@ import ReactDOM from "react-dom/client";
 import App from "./App";
 import "./index.css"; // Make sure your global CSS is imported
 
+
 const container = document.getElementById("root");
 if (!container) throw new Error("Root element not found");
 

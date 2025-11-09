@@ -6,16 +6,17 @@ const TSIcon = require("../assets/icons/TSIcon.png");
 const sidebarGif = require("../assets/images/chickens.gif");
 
 interface SideBarProps {
-  width: number;
+  width: number; // Width of the sidebar in pixels
 }
 
 const SideBar: React.FC<SideBarProps> = ({ width }) => {
-  const [showWebList, setShowWebList] = useState(true);
-  const [showProjectsList, setShowProjectsList] = useState(true);
+  const [showWebList, setShowWebList] = useState(true); // Toggle visibility of web projects list
+  const [showProjectsList, setShowProjectsList] = useState(true); // Toggle visibility of main projects list
 
-  const defaultColor = "#9A465F";
-  const hoverColor = "#EC678D";
+  const defaultColor = "#9A465F"; // Default color for social icons
+  const hoverColor = "#EC678D"; // Hover color for social icons
 
+  // Component for external social links
   const SocialIcon: React.FC<{ children: React.ReactNode; href: string }> = ({ children, href }) => (
     <a href={href} target="_blank" rel="noopener noreferrer" className="transition-colors">
       {children}
@@ -24,8 +25,9 @@ const SideBar: React.FC<SideBarProps> = ({ width }) => {
 
   return (
     <div className="flex h-full relative">
-      {/* Vertical activity bar */}
+      {/* Vertical social activity bar */}
       <div className="bg-[#191215] w-16 flex flex-col items-center py-4 space-y-4">
+        {/* GitHub link */}
         <SocialIcon href="https://github.com/sophie-rogers">
           <svg
             className="w-8 h-8"
@@ -42,6 +44,7 @@ const SideBar: React.FC<SideBarProps> = ({ width }) => {
           </svg>
         </SocialIcon>
 
+        {/* LinkedIn link */}
         <SocialIcon href="https://uk.linkedin.com/in/rogerssophie">
           <svg
             className="w-8 h-8"
@@ -54,6 +57,7 @@ const SideBar: React.FC<SideBarProps> = ({ width }) => {
           </svg>
         </SocialIcon>
 
+        {/* Email link */}
         <SocialIcon href="mailto:S.Rogers@kent.ac.uk">
           <svg
             className="w-8 h-8"
@@ -69,10 +73,10 @@ const SideBar: React.FC<SideBarProps> = ({ width }) => {
         </SocialIcon>
       </div>
 
-      {/* Main sidebar */}
+      {/* Main sidebar container */}
       <div className="flex flex-col h-full bg-[#191215] relative" style={{ width }}>
         <div className="flex-grow overflow-auto px-4 mt-5 text-[#a2aabc]">
-          {/* Projects & Web lists */}
+          {/* Toggle Projects list */}
           <div
             className="flex items-center hover:cursor-pointer hover:bg-opacity-80 hover:bg-[#2b2a2a] font-bold py-1"
             onClick={() => setShowProjectsList(!showProjectsList)}
@@ -81,6 +85,7 @@ const SideBar: React.FC<SideBarProps> = ({ width }) => {
             <p>Projects</p>
           </div>
 
+          {/* Nested Web projects list */}
           {showProjectsList && (
             <>
               <div
@@ -95,10 +100,14 @@ const SideBar: React.FC<SideBarProps> = ({ width }) => {
           )}
         </div>
 
-        {/* GIF at bottom */}
-        <div className="w-full h-1/3 absolute bottom-0 left-0 overflow-hidden">
-          <img src={sidebarGif} alt="Sidebar animation" className="w-full h-full object-cover object-center" />
-        </div>
+        {/* GIF at the bottom of the sidebar */}
+       <div className="w-full absolute bottom-0 left-0">
+         <img
+           src={require("../assets/images/chickens.gif")}
+           alt="Chickens"
+           className="w-full max-w-[250px] sm:max-w-[300px] md:max-w-[350px] lg:max-w-[400px] rounded-xl"
+         />
+       </div>
       </div>
     </div>
   );
@@ -106,15 +115,34 @@ const SideBar: React.FC<SideBarProps> = ({ width }) => {
 
 export default SideBar;
 
-const WebList: React.FC = () => (
-  <div className="flex flex-col ml-8 text-[#a2aabc]">
-    {["Ethics of AI in Healthcare Lecture", "Research Poster", "Research Protocol"].map((proj, idx) => (
-      <a key={idx} href="/">
-        <div className="flex items-center hover:bg-[#2b2a2a] py-1">
-          <img src={idx % 2 === 0 ? JSIcon : TSIcon} alt={`${proj} Icon`} className="w-6 mr-1" />
-          <p>{proj}</p>
-        </div>
-      </a>
-    ))}
-  </div>
-);
+// Component for listing web projects inside the sidebar
+const WebList: React.FC = () => {
+  const webProjects = [
+    { name: "Ethics of AI in Healthcare Lecture", href: "/documents/ethicshealthcarelecture.pdf" },
+    { name: "Research Poster", href: "/documents/researchposter.pdf" },
+    { name: "Research Protocol", href: "/documents/placeholder.pdf" },
+  ];
+
+  return (
+    <div className="flex flex-col ml-8 text-[#a2aabc]">
+      {webProjects.map((proj, idx) => (
+        <a
+          key={idx}
+          href={proj.href}
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          {/* Each project item displays an icon and the project name */}
+          <div className="flex items-center hover:bg-[#2b2a2a] py-1">
+            <img
+              src={idx % 2 === 0 ? JSIcon : TSIcon} // Alternate between JS and TS icons
+              alt={`${proj.name} Icon`}
+              className="w-6 mr-1"
+            />
+            <p>{proj.name}</p>
+          </div>
+        </a>
+      ))}
+    </div>
+  );
+};

@@ -1,15 +1,18 @@
-import React from "react";
+import React, { HTMLAttributes } from "react";
 import { ClipboardListIcon } from "@heroicons/react/solid";
 
-const Resume = () => {
+interface ResumeProps extends HTMLAttributes<HTMLDivElement> {}
+
+// Resume component displaying education, work experience, and extracurricular activities
+const Resume: React.FC<ResumeProps> = ({ ...props }) => {
   return (
-<div
-  id="Resume"
-  className="mt-16 mb-4 mx-8 lg:mx-24"
->
+    <div
+      id="Resume"
+      className="mx-8 mt-16 lg:mx-24 pb-24"
+      {...props}
+    >
       <div>
-        {/* Section heading */}
-        
+        {/* Section heading with icon and underline */}
         <div className="table mb-6">
           <ClipboardListIcon className="h-5 w-5 mr-4 text-yellow_vs" />{" "}
           <code className="table-cell text-[#e6f1ff] text-3xl mt-5 whitespace-nowrap">
@@ -20,12 +23,13 @@ const Resume = () => {
       </div>
 
       <div className="text-[#a2aabc] text-lg mt-5">
-        {/* Education */}
+        {/* Education Section */}
         <div className="flex flex-row">
           <div className="w-1/4">
             <code className="text-yellow_vs">Education</code>
           </div>
           <div className="w-3/4">
+            {/* University of Kent MSc */}
             <code className="text-blue_vs">University of Kent</code>
             <br /><br />
             <code className="italic text-sm text-lightblue_vs">
@@ -33,22 +37,29 @@ const Resume = () => {
             </code>
             <br />
             <code className="text-xs text-brown_vs">• Sept 2021 - Sept 2022</code>
+            <code className="text-sm">
+              <br />• Final Project involved developing a web booking system, creating the front and back end with PHP, SQL and JavaScript.
+            </code>
             <br /><br />
+            {/* University of Kent BSc */}
             <code className="italic text-sm text-lightblue_vs">
               BSc Multimedia Technology and Design: Distinction
             </code>
             <br />
             <code className="text-xs text-brown_vs">• Sept 2017 - May 2021</code>
+            <code className="text-sm">
+              <br />• Final Project looking at eHealth, developed an interactive web application for mental health support. Achieved a 1st and won the Speechlink prize for Best Final Project with Therapeutic Application.
+            </code>
           </div>
         </div>
 
-        {/* Work */}
+        {/* Work Section */}
         <div className="flex flex-row pt-10">
           <div className="w-1/4">
             <code className="text-yellow_vs">Work</code>
           </div>
           <div className="w-3/4">
-            {/* Employer 1 */}
+            {/* University of Kent – Assistant Lecturer */}
             <code className="text-blue_vs">University of Kent</code>
             <br /><br />
             <code className="italic text-sm text-lightblue_vs">
@@ -56,27 +67,26 @@ const Resume = () => {
             </code>
             <br />
             <code className="text-xs text-brown_vs">• January 2024 - Present</code>
-            <br />
             <code className="text-sm">
-              <br />• Delivering small group classes for undergraduate and postgraduate taught programmes within the School of Computing.
+              <br />• Delivering small group classes for undergraduate and postgraduate taught programmes.
               <br />• Gave a new lecture for third-year students on the ethics of AI in Healthcare (October 2024).
               <br />• Marking assessments on taught modules, including coding assignments, in-class tests, and essays.
             </code>
             <br /><br />
+            {/* University of Kent – Senior IT Support Assistant */}
             <code className="italic text-sm text-lightblue_vs">
               Senior IT Support Assistant, IT Helpdesk
             </code>
             <br />
             <code className="text-xs text-brown_vs">• September 2021 - September 2024</code>
-            <br />
             <code className="text-sm">
-              <br />• Ensured that over 20,000 students and staff at the University of Kent could access and use IT facilities.
-              <br />• Delivered solutions to a range of technical issues by liaising with customers and colleagues, using initiative and specialist knowledge.
-              <br />• Troubleshot personal device issues, campus internet connectivity, and library IT systems.
+              <br />• Ensured access and support for over 20,000 students and staff.
+              <br />• Delivered solutions to a range of technical issues, liaising with customers and colleagues.
+              <br />• Troubleshot devices, campus internet connectivity, and library IT systems.
               <br />• Supported software installations and repaired campus printers.
             </code>
 
-            {/* Employer 2 */}
+            {/* University of London – Online Tutor */}
             <br /><br /><br />
             <code className="text-blue_vs">University of London</code>
             <br /><br />
@@ -85,13 +95,50 @@ const Resume = () => {
             </code>
             <br />
             <code className="text-xs text-brown_vs">• April 2025 - Present</code>
-            <br />
             <code className="text-sm">
-              <br />• Providing remote support to online learners on the Computer Science undergraduate programmes.
-              <br />• Developing and presenting online 30 minute interactive lectures to supplement recorded content and readings.
-              <br />• Supervising undergraduate Final Year Projects in a range of domains.
-              <br />• Marking assessments and providing feedback, as well as second marking as part of a module team.
+              <br />• Providing remote support to online learners on undergraduate programmes.
+              <br />• Developing and presenting 30-minute interactive online lectures.
+              <br />• Supervising undergraduate Final Year Projects across domains.
+              <br />• Marking assessments and providing feedback, including second marking.
               <br /><br />
+            </code>
+          </div>
+        </div>
+
+        {/* Extra Curricular Section */}
+        <div className="flex flex-row pt-10">
+          <div className="w-1/4">
+            <code className="text-yellow_vs">Extra Curricular</code>
+          </div>
+          <div className="w-3/4">
+            {/* EDI Rep */}
+            <code className="italic text-sm text-lightblue_vs">
+              EDI Rep, School of Computing
+            </code>
+            <br />
+            <code className="text-xs text-brown_vs">• 2025 - Present</code>
+            <code className="text-sm">
+              <br />• Representing research postgraduate students and attending meetings on equality, diversity, and inclusivity matters.
+            </code>
+            <br /><br />
+            {/* PGR Rep */}
+            <code className="italic text-sm text-lightblue_vs">
+              PGR Rep, School of Computing
+            </code>
+            <br />
+            <code className="text-xs text-brown_vs">• 2024 - Present</code>
+            <code className="text-sm">
+              <br />• Representing research postgraduate students within the School of Computing.
+            </code>
+            <br /><br />
+            {/* PGR Conference Organising Committee */}
+            <code className="italic text-sm text-lightblue_vs">
+              PGR Conference Organising Committee
+            </code>
+            <br />
+            <code className="text-xs text-brown_vs">• Summer 2024</code>
+            <code className="text-sm">
+              <br />• Assisted with organising the postgraduate research conference, coordinating posters, talks, and panels.
             </code>
           </div>
         </div>
